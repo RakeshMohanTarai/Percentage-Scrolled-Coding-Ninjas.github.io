@@ -1,0 +1,116 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+/* Image Section*/
+
+#para{
+padding: 10px;
+width: 90%;
+text-align: justify;
+color: grey;
+line-height: 28px;
+font-size: 1.1rem;
+margin: auto;
+}
+
+#para span {
+  text-align: center;
+  font-size: 18px;
+}
+
+#portfolio-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+
+.portfolio-image-container {
+  max-width: 300px;
+  overflow: hidden;
+  margin: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-details {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: transparent;
+  text-align: center;
+  padding: 10px;
+}
+
+.portfolio-image-container:hover {
+  box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+  background-color: #80808078;
+  color: white;
+}
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #f0f0f0;
+  z-index: 9999;
+}
+
+#progress-bar span {
+  display: flex;
+  height: 100%;
+  background-color: #4287f5;
+  width: 0;
+}
+
+#viewedSection {
+  width:300px;
+  height:25px;
+  border: 2px solid green;
+  font-size:20px;
+  color: green;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(36, 160, 31, 0.5);
+  border-top-right-radius: 30px; /* Adjust the radius value as per your preference */
+  border-bottom-right-radius: 30px; /* Adjust the radius value as per your preference */
+  border-top-left-radius: 30px; /* Adjust the radius value as per your preference */
+  border-bottom-left-radius: 30px; /* Adjust the radius value as per your preference */
+  margin-top: 10px;
+  margin-right: 5px;
+  padding-top: 5px;
+  position: fixed;
+  right:0;
+  top:0;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  #viewedSection {
+      width: 27%;
+  }
+}
+
+@media (min-width: 768px) {
+  #viewedSection {
+     width: 100%;
+  }
+}
