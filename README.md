@@ -1,2 +1,2 @@
-# Percentage-Scrolled-Coding-Ninjas.github.io
+# Percentage Scrolled Coding Ninjas
  
